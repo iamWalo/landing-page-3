@@ -5,37 +5,37 @@ const teamMembers = [
         name: 'Souhail Allamou',
         position: 'UI/UX Designer',
         description: 'Three years of experience, our UI/UX designer specializes in creating stunning interfaces. With a keen eye for details, ensuring that our product is visually appealing, and user-friendly.',
-        image: '/imgs/user-1.png'
+        image: '/imgs/member-1.png'
     },
     {
         name: 'Member 2',
         position: 'Developer',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-        image: '/imgs/user-2.png'
+        image: '/imgs/member-2.png'
     },
     {
         name: 'Member 3',
         position: 'Backend Developer',
         description: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-        image: '/imgs/user-3.png'
+        image: '/imgs/member-3.png'
     },
     {
         name: 'Member 4',
         position: 'Backend Developer',
         description: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-        image: '/imgs/user-4.png'
+        image: '/imgs/member-4.png'
     },
     {
         name: 'Member 5',
         position: 'Backend Developer',
         description: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-        image: '/imgs/user-5.png'
+        image: '/imgs/member-5.png'
     },
     {
         name: 'Member 6',
         position: 'Backend Developer',
         description: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-        image: '/imgs/user-6.png'
+        image: '/imgs/member-3.png'
     },
 ];
 

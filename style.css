@@ -91,7 +91,7 @@ nav ul li a:hover {
 
 /* introduction section-1 */
 .introduction {
-    background-image: url('imgs/introduction-section-bkg.png');
+    background-image: url(imgs/introduction-section-bkg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -216,26 +216,42 @@ div.section-2-button {
 /*               services section                        */
 .services {
     padding: 20px 200px;
-
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .services-content {
-    background-image: url(imgs/services-section-bkg.png);
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 2px;
+    width: 1100px;
+    height: 80vh;
+    background-image: url('imgs/services-section-bkg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: auto;
-    height: 801px;
-
 }
+
+
+/* .services-background {
+    background-image: url('imgs/services-section-bkg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 80%;
+    height: 80%;
+} */
+
 
 .services div.title {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 46.8px;
     letter-spacing: 0.5px;
@@ -243,33 +259,26 @@ div.section-2-button {
     margin-bottom: 70px;
 }
 
-.services-text div {
-    width: 518px;
-    height: auto;
+.services-text {
+    max-width: 55%;
 
 }
 
 .services-text h1 {
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
-    line-height: 31.2px;
-    letter-spacing: 0.5px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
     text-align: left;
 }
 
 .services-text p {
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 17.5px;
+    line-height: 16px;
     text-align: left;
-
-}
-
-.services-text div {
-    position: relative;
-
 }
 
 #orange,
@@ -301,16 +310,6 @@ div.section-2-button {
 }
 
 
-.services-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 70px;
-    width: auto;
-    height: 567px;
-    border-radius: 24px;
-    border: 2px;
-}
 
 
 .services-img {
