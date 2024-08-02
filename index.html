@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="cale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nfticks.io</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
 
 <body>
@@ -17,17 +15,23 @@
     <section class="section-1 introduction">
         <header class="header">
             <img src="imgs/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Promo</a></li>
-                </ul>
-            </nav>
+            <div class="sidebar">
+                <i class="fa fa-times" id="menu-close"></i>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Promo</a></li>
+                    </ul>
+                </nav>
+
+            </div>
             <div class="nav-bar-button">
                 <button class="btn">Connect Wallet</button>
             </div>
+            <i class="fa fa-bars" id="menu-open"></i>
+
         </header>
         <section class="container">
             <div class="introduction-text">
@@ -202,7 +206,7 @@
     <!--                 section 4                         -->
     <section class="section-4">
         <div class="center">
-            <img src="imgs/section-4-img.png" alt="">
+            <img src="imgs/section-4-img.png" class="section-4-img">
             <div class="section-4-text">
                 <h1>Join the Revolution
                     with NFTicks</h1>

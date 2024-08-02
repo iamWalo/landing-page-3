@@ -1,3 +1,21 @@
+// side bar 
+
+const menuOpen = document.querySelector('#menu-open');
+const menuClose = document.querySelector('#menu-close');
+const sidebar = document.querySelector('.sidebar');
+const sidebarButton = document.querySelector(".nav-bar-button")
+menuOpen.addEventListener('click', () => {
+    sidebar.classList.add('show-sidebar');
+    sidebarButton.style.display = 'block';
+    sidebar.appendChild(sidebarButton);
+    menuOpen.style.display = 'none';
+})
+menuClose.addEventListener('click', () => {
+    sidebarButton.style.display = 'none';
+    sidebar.classList.remove('show-sidebar');
+    menuOpen.style.display = 'block';
+})
+
 //script for team section
 // بيانات أعضاء الفريق
 const teamMembers = [
