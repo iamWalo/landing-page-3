@@ -1207,9 +1207,6 @@ div.section-2-button {
         padding: 0;
     }
 
-
-    /*               section 2                            */
-
     .section-2-title h1 {
         width: auto;
         margin: 0 20px;
@@ -1223,7 +1220,7 @@ div.section-2-button {
         display: block;
         min-width: 100%;
         height: 400px;
-        background-color: #57575733;
+        background-image: url(/imgs/sidebar-back-ground.png);
         color: var(--white-clr);
         position: absolute;
         z-index: 5;
