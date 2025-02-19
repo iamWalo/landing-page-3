@@ -19,19 +19,17 @@
                 <i class="fa fa-times" id="menu-close"></i>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Promo</a></li>
+                        <li><a href="index.html" class="clicked">Home</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="index.html">Promo</a></li>
                     </ul>
                 </nav>
-
             </div>
             <div class="nav-bar-button">
                 <button class="btn">Connect Wallet</button>
             </div>
             <i class="fa fa-bars" id="menu-open"></i>
-
         </header>
         <section class="container">
             <div class="introduction-text">
@@ -239,7 +237,7 @@
             <button class="team-arrow arrow left-arrow">
                 <i class="fa-solid fa-chevron-left"></i></button>
             <div class="profile-info">
-                <img id="main-profile-img" src="/imgs/member-1.png" alt="Main Profile Image" class="main-profile-img">
+                <img id="main-profile-img" src="./imgs/member-1.png" alt="Main Profile Image" class="main-profile-img">
                 <h2 class="name">Souhail Allamou</h2>
                 <h3 class="position">UI/UX Designer</h3>
                 <p class="description">
@@ -252,22 +250,22 @@
         </div>
         <div class="profiles">
             <div class="profile" data-index="0" data-info="UI/UX Designer">
-                <img src="/imgs/member-1.png" alt="Main Team Member">
+                <img src="./imgs/member-1.png" alt="Main Team Member">
             </div>
             <div class="profile" data-index="1" data-info="Developer">
-                <img src="/imgs/member-2.png" alt="Team Member 2">
+                <img src="./imgs/member-2.png" alt="Team Member 2">
             </div>
             <div class="profile" data-index="2" data-info="Designer">
-                <img src="/imgs/member-3.png" alt="Team Member 3">
+                <img src="./imgs/member-3.png" alt="Team Member 3">
             </div>
             <div class="profile" data-index="3" data-info="Backend Developer">
-                <img src="/imgs/member-4.png" alt="Team Member 3">
+                <img src="./imgs/member-4.png" alt="Team Member 3">
             </div>
             <div class="profile" data-index="4" data-info="frontend Developer">
-                <img src="/imgs/member-5.png" alt="Team Member 3">
+                <img src="./imgs/member-5.png" alt="Team Member 3">
             </div>
             <div class="profile" data-index="6" data-info="full stack Developer">
-                <img src="/imgs/member-2.png" alt="Team Member 3">
+                <img src="./imgs/member-2.png" alt="Team Member 3">
             </div>
         </div>
     </section>
@@ -356,7 +354,7 @@
             <img src="imgs/memory-img-3.png" alt="Race car">
         </div>
     </section>
-    <!--                 section 7                         -->
+    <!--                 section 8                         -->
     <footer class="footer-section">
         <div class="subscribe-container">
             <div class="subscribe-container-title">
@@ -393,6 +391,29 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAGEeqXGX2UAA9xsZ3z9nqVRfUVplHsRq8",
+            authDomain: "nifticks-io.firebaseapp.com",
+            projectId: "nifticks-io",
+            storageBucket: "nifticks-io.appspot.com",
+            messagingSenderId: "280534117057",
+            appId: "1:280534117057:web:f5b9f42f4d279b67d20240",
+            measurementId: "G-X6DXRCT6PL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>

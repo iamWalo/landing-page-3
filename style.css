@@ -63,6 +63,10 @@ nav ul {
     padding: 0;
 }
 
+.clicked {
+    opacity: 1;
+}
+
 nav ul li {
     margin: 0 60px;
 }
@@ -70,10 +74,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 100;
+    font-size: 17px;
+    font-weight: 400;
     letter-spacing: 0.5px;
     color: white;
+    opacity: .7;
     transition: color 0.3s ease;
 }
 
@@ -164,7 +169,6 @@ section.container {
     align-items: center;
     justify-content: center;
     height: 94px;
-
     font-family: Poppins;
     font-size: 30px;
     font-weight: 500;
@@ -248,11 +252,11 @@ div.section-2-button {
 
 .services-text {
     max-width: 55%;
-
+    margin-left: 10px;
 }
 
 .services-text h1 {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 30px;
@@ -261,17 +265,17 @@ div.section-2-button {
 }
 
 .services-text p {
-    font-family: Poppins;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
     text-align: left;
 }
 
 #orange,
 #blue,
 #pink {
-    margin-left: -10px;
+    margin-left: -8px;
 }
 
 #orange::before,
@@ -280,8 +284,8 @@ div.section-2-button {
     position: relative;
     content: "\2022 ";
     font-size: 30px;
-    left: -20px;
-    bottom: 0px;
+    left: -12px;
+    bottom: -3px;
 }
 
 #orange::before {
@@ -1218,9 +1222,14 @@ div.section-2-button {
 
     .sidebar {
         display: block;
+        position: fixed;
+        overflow-y: hidden;
         min-width: 100%;
-        height: 400px;
+        height: 100vh;
         background-image: url(imgs/sidebar-back-ground.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         color: var(--white-clr);
         position: absolute;
         z-index: 5;
@@ -1252,8 +1261,8 @@ div.section-2-button {
         display: block;
         position: absolute;
         font-size: 30px;
-        top: 35px;
-        left: 30px;
+        top: 30px;
+        left: 78%;
     }
 
     #menu-close,
@@ -1290,151 +1299,5 @@ div.section-2-button {
         margin: 0;
     }
 
-    /*                            services section-3                            */
-    .services-img {
-        display: none;
-    }
 
-    .services-text {
-        max-width: 100%;
-        position: relative;
-        left: 30px;
-        bottom: 20px;
-    }
-
-    .services-text div {
-        margin: 50px 0;
-        width: 80%;
-    }
-
-    /*                         section 4                                        */
-    .section-4,
-    .section-4 .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding: 0px;
-        margin: 0 0 30px 0;
-    }
-
-
-    .section-4 .center {
-        width: 100%;
-        height: auto;
-        padding: 60px 0 0 10px;
-        margin: 0;
-        justify-content: center;
-    }
-
-    .section-4 .center h1 {
-        position: absolute;
-        top: -70px;
-        right: 2px;
-        text-align: center;
-        width: 100%;
-        width: auto;
-    }
-
-    .section-4 .center img.section-4-img {
-        width: 167.3px;
-        height: 217.55px;
-    }
-
-
-    .section-4-text {
-        margin: 0px;
-        padding: 0;
-        Width: auto;
-        Height: auto;
-    }
-
-    .section-4-text div {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    .section-4-text p {
-        font-size: 10px;
-        line-height: 12px;
-    }
-
-    .section-4-text img {
-        margin: 5px;
-        width: 15px;
-        height: 15px;
-    }
-
-    /*                         section 5 team                                   */
-
-    .profile-info {
-        background-color: var(--second-clr);
-        padding: 20px;
-        border-radius: 10px;
-        width: 60%;
-        margin-bottom: 30px;
-    }
-
-    /*                            memory    section                             */
-
-    .memory-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px;
-        max-width: auto;
-        margin: 40px 10px;
-    }
-
-
-    div.text-container {
-        min-width: 80%;
-        text-align: center;
-        margin-bottom: 50px;
-        padding: 0 20px;
-    }
-
-
-    .memory-section .text-container {
-        max-width: auto;
-    }
-
-    .memory-section .text-container h1 {
-        font-size: 1.5em;
-    }
-
-    .memory-section .text-container p {
-        font-size: .9em;
-    }
-
-    .memory-section .image-container {
-        gap: 10px;
-    }
-
-    .memory-section .image-container img {
-        width: 100px;
-        height: auto;
-    }
-
-    /*                        footer                                   */
-
-    form.subscribe-form {
-        min-width: 90%;
-    }
-
-
-    .subscribe-form button {
-        width: 100px;
-        font-size: .7rem;
-    }
-
-
-    .footer-content {
-        margin: 0px;
-        flex-direction: column;
-        grid-gap: 20px;
-    }
 }
